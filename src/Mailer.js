@@ -14,7 +14,7 @@ function Mailer() {
     function sendemail(e) {
         e.preventDefault();
     
-        if (codice === 'ciao'){
+        if (codice === 'napoli' || codice === 'Napoli'){
             navigate('/secret')
             return
         }
@@ -22,6 +22,7 @@ function Mailer() {
         emailjs.sendForm('service_9ihaixr', 'template_moj7e12', e.target, 'mLYuw_x3TsbO2ERCF')
           .then((result) => {
               console.log('funzionato ', result.text);
+              setcodice('');
           }, (error) => {
               console.log('errore ',error.text);
           });

@@ -10,7 +10,7 @@ function Box({ text, color, ...props }) {
   const [hovered, set] = useState(false)
   return (
     <mesh {...props} onPointerOver={(e) => set(true)} onPointerOut={(e) => set(false)}>
-      <RoundedBox args={[6, 2, 2]} radius={0.1}>
+      <RoundedBox args={[8, 2, 2]} radius={0.1}>
         <meshLambertMaterial attach="material" color={hovered ? 'cyan' : color} />
       </RoundedBox>
       <Html position={[0, 0, 1]} className="label" center>
@@ -71,8 +71,8 @@ export default function App() {
       <div
         ref={scrollRef}
         onScroll={(e) => (scroll.current = e.target.scrollTop / (e.target.scrollHeight - e.target.clientHeight))}
-        className="scroller">
-        <div style={{ height: `200vh`, pointerEvents: 'none' }}></div>
+        className="scroller overflow-hidden">
+        <div style={{ height: `200vh`, pointerEvents: 'none',overflow: 'hidden' }}></div>
       </div>
     </>
   )

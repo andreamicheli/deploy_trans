@@ -89,6 +89,13 @@ function App() {
       {/* </div> */}
 
       {/* pagina 2 */}
+      <div class="snap-start w-screen h-screen flex flex-col items-center justify-center">
+      <div className="ml-20">
+            <Timer />
+          </div>
+      </div>
+
+      {/* pagina 3 */}
       {/* <div className="snap-start! flex items-center justify-center flex-col h-screen w-screen bg-violet-300"> */}
       <div class="snap-start w-screen h-screen flex flex-col items-center justify-center">
         <div className={"h-2/3 w-screen"}>
@@ -104,17 +111,13 @@ function App() {
               </Suspense>
           </Canvas>
         </div>
-        <div className="w-full flex justify-center items-center">
-          <div className="w-1/3">
-            <span className="text-cyan-50 font-bold text-2xl mr-20">Iscriviti all'evento, manca poco!</span>
-            <Mailer />
-            <div className="text-cyan-100 text-2xl mt-16 border-cyan-400 rounded-xl border-4 p-6 hover:animate-pulse">Scoprirai le grandi innovazioni che abbiamo preparato per te e la tua impresa!</div>
+          <div className="w-2/3 flex flex-row justify-around text-center items-center">
+            <div className="justify-start text-left">
+              <span className="text-cyan-50 font-bold text-2xl">Iscriviti all'evento, manca poco!</span>
+              <Mailer />
+            </div>
+            <div className="w-1/3 text-cyan-100 text-2xl border-cyan-400 rounded-xl border-4 p-6 hover:animate-pulse">Scoprirai le grandi innovazioni che abbiamo preparato per te e la tua impresa!</div>
           </div>
-          <div className="ml-20">
-            <Timer />
-          </div>
-
-        </div>
       </div>
  
     {/*  <div className="h-[50vh]">
