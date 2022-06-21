@@ -36,16 +36,16 @@ function Scene() {
     <>
       <Box text={
       <>
-      <div className='font-bold text-4xl w-max'>Perché un <span className='text-orange-600'>metaverso</span> pensato per le aziende?</div>
-      <div className='text-xl w-full mt-2'>Negli ultimi anni abbiamo capito l'importanza degli spazi digitali collaborativi, la pandemia ci ha spinto a trovare nuove soluzioni per incontrarci, fare riunioni, prendere decisioni e lavorare insieme ma da casa.<br/> In un periodo difficile abbiamo scoperto nuove opportunità che oggi possiamo mettere in atto per migliorare i nostri posti di lavoro.</div>
+      <div className='font-bold text-3xl w-max'>Perché un <span className='text-orange-600'>metaverso</span> pensato per le aziende?</div>
+      <div className='text-lg w-full mt-2'>Negli ultimi anni abbiamo capito l'importanza degli spazi digitali collaborativi, la pandemia ci ha spinto a trovare nuove soluzioni per incontrarci, fare riunioni, prendere decisioni e lavorare insieme ma da casa.<br/> In un periodo difficile abbiamo scoperto nuove opportunità che oggi possiamo mettere in atto per migliorare i nostri posti di lavoro.</div>
       </>
       } color="lightblue" />
 
 
       <Box text={
         <>
-        <div className='font-bold text-4xl w-max'>Hai già conosciuto <span className='text-orange-600'>Futura</span>, la nostra IA?</div>
-        <div className='text-xl w-full mt-2'>Futura è l'assistente digitale che mettiamo a disposizione in FORWORLD. Lei ti guiderà alla scoperta delle potenzialità della nostra piattaforma. Supporta fino a 22 miliardi di operazioni al secondo per non perdersi nemmeno una delle infinite strade che portano al domani. Chi meglio di lei può suggerire alla tua azienda su cosa investire il prossimo trimestre o se un'idea avrà ancora appeal tra cinque anni?</div>
+        <div className='font-bold text-3xl w-max'>Hai già conosciuto <span className='text-orange-600'>Futura</span>, la nostra IA?</div>
+        <div className='text-lg w-full mt-2'>Futura è l'assistente digitale che mettiamo a disposizione in FORWORLD. Lei ti guiderà alla scoperta delle potenzialità della nostra piattaforma. Supporta fino a 22 miliardi di operazioni al secondo per non perdersi nemmeno una delle infinite strade che portano al domani. Chi meglio di lei può suggerire alla tua azienda su cosa investire il prossimo trimestre o se un'idea avrà ancora appeal tra cinque anni?</div>
         </>
       } color="lightyellow" position={[0, -viewport.height, 0]} />
     </>

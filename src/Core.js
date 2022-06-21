@@ -81,7 +81,7 @@ function Core() {
       <div className='flex flex-row w-full h-1/2'>
       <div className='w-1/2 flex items-center'>
           {/* <img src={'/audiohack.gif'} alt='hacking1' className="h-2/3 pr-20"/> */}
-          <img src={'/russiahack.gif'} alt='hacking2' className="w-full pl-20"/>
+          <img src={'/russiahack.gif'} alt='hacking2' className="w-2/3 pl-20"/>
         </div>
 
         <div className='w-1/2 flex items-center justify-center'>
