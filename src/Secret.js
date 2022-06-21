@@ -9,8 +9,9 @@ function Modal(){
             <div className='flex justify-between'>
             <span className='text-cyan-200 font-extrabold text-2xl mb-2'>ATTENZIONE!</span></div>
             <p className='text-cyan-200 font-light mb-6'>materiale sensibile, è vietato rilasciare informazioni</p>
-            <p className='text-cyan-200 font-bold'>username: </p>
-            <p className='text-cyan-200 font-bold'>password: </p>
+            <p className='text-cyan-200 font-bold'>username: <span className='italic font-normal'>roberto.marino.1973@gmail.com</span></p>
+            <p className='text-cyan-200 font-bold'>password: <span className='italic font-normal'>Robertone@</span></p>
+            <p className='text-cyan-200 font-light mt-4'>per accedere all'archivio segreto, inserire le credenziali<br /> precedenti sul servizio cloud <a href='mega.io' className='text-blue-300 underline'>Mega.io</a></p>
         </div>
     </div>
 

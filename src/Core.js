@@ -39,7 +39,7 @@ function Core() {
     let timeout = 0;
     if (output===2){
        timeout = setTimeout(() => {
-        setoutput(3)}, 1000);
+        setoutput(3)}, 3000);
     }
   
     return () => {
@@ -80,7 +80,7 @@ function Core() {
           {next >= 13 ? <><div className='w-1/2 pb-10 flex z-10'>
             <button className='bg-transparent hover:bg-cyan-300 hover:text-black text-cyan-300 py-2 px-4 mr-4 border-2 border-cyan-300' onClick={()=>{setoutput(1)}}>START</button>
             <button className='bg-transparent hover:bg-red-400 hover:text-black text-cyan-300 py-2 px-4 border-2 border-cyan-300 hover:border-red-400' onClick={()=>{setoutput(2)}}>STOP</button>
-            <button></button></div></> : <></>}
+            </div><br /></> : <></>}
           {output===1 ? <><Parola sentence={'FUTURA è già attivata'} setNext={setNext}/></> : <></>}
           {output===2 ? <><Parola sentence={'SPEGNIMENTO SISTEMA'} setNext={setNext}/></> : <></>}
         </div>

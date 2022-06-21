@@ -90,7 +90,7 @@ function App() {
 
       {/* pagina 2 */}
       <div class="snap-start w-screen h-screen flex flex-col items-center justify-center">
-      <div className="ml-20">
+        <div>
             <Timer />
           </div>
       </div>

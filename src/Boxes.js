@@ -10,7 +10,7 @@ function Box({ text, color, ...props }) {
   const [hovered, set] = useState(false)
   return (
     <mesh {...props} onPointerOver={(e) => set(true)} onPointerOut={(e) => set(false)}>
-      <RoundedBox args={[8, 2, 2]} radius={0.1}>
+      <RoundedBox args={[7, 2, 2]} radius={0.1}>
         <meshLambertMaterial attach="material" color={hovered ? 'cyan' : color} />
       </RoundedBox>
       <Html position={[0, 0, 1]} className="label" center>
@@ -45,7 +45,7 @@ function Scene() {
       <Box text={
         <>
         <div className='font-bold text-3xl w-max'>Hai già conosciuto <span className='text-orange-600'>Futura</span>, la nostra IA?</div>
-        <div className='text-lg w-full mt-2'>Futura è l'assistente digitale che mettiamo a disposizione in FORWORLD. Lei ti guiderà alla scoperta delle potenzialità della nostra piattaforma. Supporta fino a 22 miliardi di operazioni al secondo per non perdersi nemmeno una delle infinite strade che portano al domani. Chi meglio di lei può suggerire alla tua azienda su cosa investire il prossimo trimestre o se un'idea avrà ancora appeal tra cinque anni?</div>
+        <div className='text-lg w-full mt-2'>Futura è l'assistente digitale che mettiamo a disposizione in FORWORLD. Lei ti guiderà alla scoperta delle potenzialità della nostra piattaforma. Supporta fino a 22 miliardi di operazioni al secondo per non perdersi nemmeno una delle infinite strade che portano al domani. Chi meglio di lei può suggerire alla tua azienda se un'idea avrà ancora appeal tra cinque anni?</div>
         </>
       } color="lightyellow" position={[0, -viewport.height, 0]} />
     </>

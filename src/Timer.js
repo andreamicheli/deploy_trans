@@ -9,6 +9,7 @@ const Timer = () => {
     const countTimer = React.useCallback(() => {
         if (timer <= 0) {
             localStorage.clear("timer");
+            return alert('hai perso, l\'evento è iniziato!')
         } else {
             setTimer(timer - 1);
             localStorage.setItem("timer", timer);
