@@ -57,7 +57,11 @@ function Core() {
     <div className={output>=2 ? 'absolute z-20 top-0 left-0 flex justify-center items-center w-screen h-screen' : 'hidden'}>
       <img src={'/stopgif.gif'} alt='stop' className="w-full h-full"/>
       <div className='absolute z-20 text-center text-red-500 animate-pulse font-VT323 text-6xl'>FUTURA È STATA DISATTIVATA</div>
-      <div className={output===3 ? 'absolute z-30 w-4/5 bg-green-400 h-full' : 'hidden'}>video</div>
+      <div className={output===3 ? 'absolute z-30 w-4/5 bg-transparent h-full flex justify-center' : 'hidden'}>
+        <video controls={true} autoPlay={true} muted={true} playsInline>
+          <source src="/finalelight.mp4" type="video/mp4"/>
+        </video>
+      </div>
     </div>
 
     <div className='bg-black w-screen h-screen flex flex-col text-white'>
